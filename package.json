@@ -8,9 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cd ./packages/server && npm run start",
-    "start": "cd ./packages/client && npm run serve"
+    "start:client": "cd ./packages/client && npm run serve",
+    "build:client": "cd ./packages/client && npm run build",
+    "lint:client": "eslint --ext .js,.vue packages/client",
+    "test:client": "cd ./packages/test && node ./app.js",
+    "start:server": "cd ./packages/server && npm run start"
   },
   "repository": {
     "type": "git",
