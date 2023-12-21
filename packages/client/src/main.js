@@ -5,6 +5,8 @@ import store from './store'
 // import VueCompositionAPI from '@vue/composition-api'
 import 'element-ui/lib/theme-chalk/index.css'
 import Element from 'element-ui'
+import '@/styles/index.scss'
+
 Vue.use(Element)
 
 // Vue.use(VueCompositionAPI)

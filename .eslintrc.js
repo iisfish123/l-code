@@ -24,10 +24,10 @@ module.exports = {
   rules: {
     'vue/max-attributes-per-line': ['error', {
       singleline: {
-        max: 1
+        max: 2
       },
       multiline: {
-        max: 1
+        max: 2
       }
     }],
     'vue/singleline-html-element-content-newline': 'off',

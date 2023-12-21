@@ -4,6 +4,9 @@
       <SchemaField
         :schema="schema"
         :scope="{ useProvinceDataSource, useCityDataSource }">
+        <template v-slot:default>
+          123321
+        </template>
       </SchemaField>
       <Submit @submit="onSubmit">提交</Submit>
       <Reset @click="onReset">重置</Reset>
@@ -86,7 +89,7 @@ const schema = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
       'x-component-props': {
-        style: 'width: 240px;',
+        style: 'width: 100%;',
         placeholder: '请输入'
       },
       'x-display': 'none'

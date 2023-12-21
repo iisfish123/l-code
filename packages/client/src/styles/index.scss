@@ -1,0 +1,68 @@
+@import './mixin.scss';
+
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+.fu-flow-handle {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-right: 40px;
+  text-align: right;
+  padding-top: 15px;
+  border-top: 1px solid #dcdcdc;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  background: #fff;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.app-container {
+  padding: 40px;
+  min-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100%;
+}
+
+.handle {
+  padding: 15px 0;
+  text-align: right;
+  background: #fff;
+  box-sizing: border-box;
+
+  &.fixed {
+    position: fixed;
+    padding-right: 40px;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .08);
+
+    .handle-tip {
+      margin-right: 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+.el-select-dropdown__item {
+  max-width: 600px;
+}
+
+::v-deep .el-select-dropdown__item {
+  max-width: 600px;
+}
+
+.el-select-dropdown__list {
+  max-width: 600px;
+}
+
+::v-deep .el-select-dropdown__list {
+  max-width: 600px;
+}
