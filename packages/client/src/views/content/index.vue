@@ -20,7 +20,7 @@
       </Draggable>
       <Draggable
         :list="myArray2"
-        class="list-group"
+        class="drag"
         draggable=".item"
         group="components"
         @change="log"
@@ -85,6 +85,10 @@ export default {
   }
   .material-drag-item {
     cursor: move;
+  }
+  .drag {
+    flex: 1;
+    width: 100%;
   }
 }
 </style>

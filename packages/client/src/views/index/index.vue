@@ -89,7 +89,7 @@ const schema = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
       'x-component-props': {
-        style: 'width: 100%;',
+        style: 'width: 240px;',
         placeholder: '请输入'
       },
       'x-display': 'none'
