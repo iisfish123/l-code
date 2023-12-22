@@ -1,5 +1,5 @@
 <template>
-  <div id="#app">
+  <div id="#formily">
     <Elform :form="form">
       <SchemaField
         :schema="schema"

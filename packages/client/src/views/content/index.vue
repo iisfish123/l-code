@@ -32,7 +32,7 @@
         >
           <Index :element="element"/>
         </div> -->
-        <Index :elements="myArray2" />
+        <!-- <Index :elements="myArray2" /> -->
         <div class="item">
           <Render :elements="myArray2"/>
         </div>
@@ -44,12 +44,11 @@
 
 <script>
 import Draggable from 'vuedraggable'
-import Index from '@/views/index/index.vue'
 import Render from '@/views/designer/index.js'
 
 export default {
   name: 'HomeView',
-  components: { Draggable, Index, Render },
+  components: { Draggable, Render },
   data() {
     return {
       material: [{ id: 1, name: 'Input' }, { id: 2, name: 'Select' }],
